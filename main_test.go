@@ -1,4 +1,4 @@
-package main
+package golines
 
 import (
 	"io/ioutil"
@@ -12,14 +12,14 @@ import (
 )
 
 var testFiles = map[string]string{
-	"test1.go": `package main
+	"test1.go": `package golines
 
 import "fmt"
 
 func main() {
 	fmt.Printf("%s %s %s %s %s %s", "argument1", "argument2", "argument3", "argument4", "argument5", "argument6")
 }`,
-	"test2.go": `package main
+	"test2.go": `package golines
 
 func main() {
 	myMap := map[string]string{"key1": "value1", "key2": "value2", "key3": "value3", "key4": "value4", "key5", "value5"}
@@ -126,7 +126,7 @@ func TestRunListFiles(t *testing.T) {
 		"test2.go": testFiles["test2.go"],
 
 		// File that doesn't need to be shortened
-		"test3.go": "package main\n",
+		"test3.go": "package golines\n",
 	}
 
 	writeTestFiles(t, updatedTestFiles, true, tmpDir)

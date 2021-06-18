@@ -13,4 +13,4 @@ File bugs or feature requests at:
     https://github.com/segmentio/golines/issues
 
 */
-package main // import "github.com/segmentio/golines"
+package golines // import "github.com/segmentio/golines"

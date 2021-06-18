@@ -1,4 +1,4 @@
-module github.com/segmentio/golines
+module github.com/wrype/golines
 
 go 1.16
 
